@@ -1,0 +1,58 @@
+! =  utiliza-se a exclamação para iniciar o codigo, nele ja tras a linguagem bem como ja abre as tags html entre outras configurações
+
+meta charset="UTF-8"> é utilizado para definir os caracteres do texto como acento etc.
+
+
+html =  para abrir a tag do codigo 
+
+head = cacalho da pagina
+
+body = corpo da pagina
+
+h1 = titulo principal o H1 só é utilizado uma unica vez por pagina
+h2 = demais titulos em a mesma importancia do H1
+h3 = demais titulos em a mesma importancia do H1
+h4 = demais titulos em a mesma importancia do H1
+h5 = demais titulos em a mesma importancia do H1
+h6 = demais titulos em a mesma importancia do H1
+
+p = paragrafo de textos
+span = 
+
+b = negrito
+i = italico
+strong = negrito
+em = destacar frase texto etc
+br = quebrar linha
+hr = adiiona uma linha horizontal
+
+ul = lista nao ordenada
+ol = lista ordenada
+li = lista
+dl
+dt
+dd
+
+a = ancora, serve para adicionar links
+
+img = para adicionar imagem
+figure = 
+figcaption =  para adiiconar uma legenda na imagem
+
+
+---------------ATALHOS--------------------
+
+Ctrl + ; = cria a tag para inserir um comentario
+Alt + z = quebra a linha para visualisar melhor o codigo
+Ctrl + Alt + x = wrap abreviation server para adicionar um tag para uma determinada selecao (ESSE É UM ATALHO MEU NAO E PADRAO)
+Shift + Alt + seta pra baixo = serve para copiar para as linhas de baixo um conteudo selecionados 
+ex: casa 
+    papel 
+
+    casa
+    papel
+
+------------------- OUTROS----------------
+
+target"blank" = utilizando antes do href faz com que o link abra em uma nova pagina EX <a target="blank" href="link"
+
