@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- --------------------CITACAO-------------------- -->
+
+    <p>segundo Renato Russo:</p>
+
+    <!-- O blockquote faz a indentacao de acordo com as normas tecnicas, usa-lo sempre para fazer citacoes
+    obs: quando insermos a tag= cite=   podemos adicionar o link de onde tiramos a citacao
+    essas informacoes nao sao apresentadas na tela mas serve para os navegadores e uma boa pratica -->
+
+    <blockquote cite="https://www.pensador.com/frases_de_renato_russo/">
+      É preciso amar as pessoas como se não houvesse amanhã, porque se você
+      parar para pensar, na verdade não há.
+    </blockquote>
+
+    <!-- EX: segundo Renato Russo:
+
+É preciso amar as pessoas como se não houvesse amanhã, porque se você parar para pensar, na verdade não há. -->
+
+    <p>
+      segundo Renato Russo: <q>Quando penso em alguém, só penso em você.</q>
+    </p>
+    <!-- a tag= <q> serve para citacao na mesma linha do citado
+      EX: segundo Renato Russo: "Quando penso em alguém, só penso em você."----------- 
+    OBS: tambem podemos usar a tag= cite-->
+
+    <!-- --------------------ABREVIACAO-------------------- -->
+
+    <p>
+      o <abbr title="Hioertext markup language">HTML</abbr> é uma linguagem
+      utilizada na criacao de sites para a web
+      <!-- a tag= <abbr> e utilizada para mostrar o conteudo de uma determinada abreviacao
+        toda vez que o usuario coloca o mouse sobre a abreviacao o texto do seu significado e mostrado
+      para conferir visualize no go live -->
+    </p>
+
+    <!-- --------------------CONTATO-------------------- -->
+
+    <address>
+      <p>Telefone: 62 992282458</p>
+      <p>Endereco: av liverpool</p>
+      <p>Aparecida de Goiania</p>
+    </address>
+    <!-- sempre que for usar dados de endereco utilizar a tag= <address></address>  essa tag modifica a formatacao do endereco
+tornando padrao-->
+
+    <!-- --------------------USANDO CODIGOS-------------------- -->
+
+    <pre><code>console.log();
+
+  var nome = 'jack'
+
+  function () {
+    console.log('Ola, Mundo')
+  }
+</code></pre>
+    <!-- A tag <pre> e utilizada para deixar a formatacao da mesma forma que digitarmos, ela evita que o codigo seja auto formatado
+     A tag <code> e utilizada para inserir no html o codigo desejado
+-->
+
+    <p>dentro do codigo acima tem a variavel <var>nome</var> e igual jack</p>
+    <!-- acima passando a variavel dentro da tag <var> o nome da variavel e apresentado de uma maneira diferente -->
+
+    <samp
+      >Quando tudo nos parece dar errado Acontecem coisas boas Que não teriam
+      acontecido Se tudo tivesse dado certo.</samp
+    >
+
+    <!-- tag <samp> deixa o estilo da fonte de uma maneira padrao como se fosse uma resposta dada pelo computador mesma caracteristica de fontes -->
+
+    <p>exemplo <kbd>Ctrl + Alt</kbd></p>
+    <!-- a tag <kbd> que significa Keyboar. representa a formatacao do teclado -->
+
+    <!-- --------------------DATA-------------------- -->
+    <time datetime="24-02-07">dia 07 de fevereiro de 2024</time>
+    <!-- maneira correta de inserir a data... mesmo nao mudando a forma da escrita, o codigo ficara atualizado com a informacao do computador ja que o computador ler o codigo da forma que esta na tag. <time datatime> existem outros formatos de inserir data basta procurar na documentacao do html -->
+  </body>
+</html>
