@@ -10,6 +10,9 @@ a {
   font-family: "montserrat", sans-serif;
   color: #404040;
 }
+strong {
+  font-weight: 600;
+}
 
 .lista_cabecalho a {
   color: #112e61;
@@ -55,4 +58,130 @@ h1 {
   color: #fff;
   padding: 9px 0;
   display: block;
+}
+
+.h2_conteudos_gratuitos {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+h2.h2_conteudos_gratuitos span {
+  color: #7a40be;
+  font-weight: 600;
+}
+
+.gratuiro_h3 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.gratuito_item_lista a {
+  font-size: 19px;
+  text-decoration: none;
+}
+
+/* ---------------------------------SEÇÃO DIFERENCIAIS------------------------------------ */
+
+.h2_diferenciais {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.h2_diferenciais strong {
+  font-weight: 600;
+}
+
+.p_diferenciais {
+  font-size: 19px;
+}
+
+.h3_diferenciais {
+  color: #005e88;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.empresas_diferenciais {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.empresas_diferenciais a {
+  text-decoration: none;
+  color: #005e88;
+}
+
+/* ------------------------------SEÇÃO O QUE FALAM ------------------------------- */
+
+.o_que_falam span {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.na_midia {
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.p_midia {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.h2_midia {
+  font-size: 35px;
+}
+
+/* -------------------------------------- SEÇÃO ULTIMOS BLOGS-------------------------*/
+.p_ultimos_posts {
+  font-size: 15px;
+}
+
+.p2_ultimos_posts {
+  font-size: 17px;
+}
+.p_ultimos_posts a {
+  font-weight: 600;
+  color: #f7a70c;
+  text-decoration: none;
+}
+
+.link_ultimos_post {
+  font-size: 24px;
+  color: #404040;
+  text-decoration: none;
+}
+
+/* ------------------------------------SEÇÃO COMO AJUDAR----------------------------- */
+
+.h2_ajuda span {
+  font-weight: 600;
+  font-size: 35 px;
+  color: #475876;
+}
+
+.p_ajuda {
+  font-size: 19px;
+  color: #404040;
+}
+.p_ajuda a {
+  font-weight: 600;
+  color: #008ff7;
+}
+
+.p_ajuda b {
+  font-weight: bolder;
+}
+
+/* ----------------------------------- SEÇÃO CURSO GRATIS------------------------------------ */
+
+.h2_mini_curso {
+  font-size: 35px;
+}
+
+/* ------------------------------------SEÇÃO FINAL ------------------------------------------*/
+
+.h3_final {
+  font-size: 22px;
+  color: #404040;
 }
