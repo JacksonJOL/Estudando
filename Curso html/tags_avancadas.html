@@ -78,7 +78,71 @@ tornando padrao-->
     <!-- a tag <kbd> que significa Keyboar. representa a formatacao do teclado -->
 
     <!-- --------------------DATA-------------------- -->
-    <time datetime="24-02-07">dia 07 de fevereiro de 2024</time>
+    <time datetime="24-02-07">dia 07 de fevereiro de 2024</time> <br /><br />
     <!-- maneira correta de inserir a data... mesmo nao mudando a forma da escrita, o codigo ficara atualizado com a informacao do computador ja que o computador ler o codigo da forma que esta na tag. <time datatime> existem outros formatos de inserir data basta procurar na documentacao do html -->
+
+    <!-- --------------------ESTRUTURAS HTML --------------------  -->
+
+    <header>cabecalho da pagina</header>
+    <!-- o <header> deve ser o primeiro elemento a ser incluido no body falando em paginas, ja que ele e o cabecalho da pagina -->
+    <nav>navegacao da pagina</nav>
+    <!-- a tag <nav> utilizamos geralmente dentro do <header> ela permite que navegamos por todo a pagina porem 
+  a parte que vc define como <nav> continua aparecendo mesmo indo ate o final da pagina -->
+    <footer>roda pe da pagina</footer>
+    <!-- a tag <footer> e o roda pe da pagin sao geralmente onde fica algumas informacoes sobre a pagina alguma informacao da pagina -->
+    <br />
+    <!-- ------ obs: toda pagina so pode ter um UNICO <header>, um UNICO <nav> e um UNICO <footer>, assim como o H1 -->
+    <main>
+      <!-- conteudo principal da pagina geralmente todo o conteudo da pagina fica
+      dentro do main.... -->
+      <article>
+        <!-- fica dentro do main geralmente onde tem os artigos escritos... -->
+      </article>
+      <aside>
+        <!-- geralmente sao partes do site que nao tem ligacao direta com o conteudo
+        principal -->
+      </aside>
+      <!-- exemplo seu artigo principal fala de linguagem de programacao ai nessa tag <aside> que geralmente aparece ao lado ta la falando de excel, como evoluir no excel etc...  -->
+      <section>
+        <div>
+          <!--  e uma estrutura que engloba varios elementos, nesse ex ela engloba o h1, h2, p, a, dentro de um bloco na secao a geralemnte fica um elemento embaixo do outro-->
+          <h1></h1>
+          <h2></h2>
+          <p></p>
+          <a href=""></a>
+        </div>
+        <img src="" alt="" />
+        <!-- geralmente é utilizado a section para separar as paginas por seçoes  dentro de uma secao pode se conter varias tags mantendo a desde que mantemos a semantica
+        obs: section, div,  podemos usar quantas vezes necessario.. o main somente uma unica vez  -->
+        <hr />
+        <hr />
+        <!-- -------------------- FORMULARIO----------------------- -->
+        <form action="">
+          <div>
+            <label for="nome">nome</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="seu primeito nome"
+            />
+          </div>
+          <!-- O placeholder e o nome que fica dentro da caixinha do formulario ate que o usuario comece a escrever -->
+          <!--  tag <label> e utilizara para adicionar legendas aos fomularios, como nesse exeplo, esta referenciando q o ID=Nome, tera uma legenda na frente do fomulario com a palavra nome, -->
+          <div>
+            <label for="email">email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="seu email"
+            />
+          </div>
+          <button type="submit">Enviar!</button>
+          <!--  quando a tag <button> estiver dentro de uma TAR <FORM> temos que utilizar o type="submit" que siginica que ao clicarmos nesse botao de envia o formulario preenchido sera enviado-->
+        </form>
+        <!-- DICA no input utilizar o name em ingles iinput id="nome" name="nome" type="text" o type e o tipo, se e strig, inteiro etc...-->
+      </section>
+    </main>
   </body>
 </html>
