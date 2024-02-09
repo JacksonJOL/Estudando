@@ -144,5 +144,50 @@ tornando padrao-->
         <!-- DICA no input utilizar o name em ingles iinput id="nome" name="nome" type="text" o type e o tipo, se e strig, inteiro etc...-->
       </section>
     </main>
+
+    <!-- -----------------------TABELAS--------------------- -->
+
+    <table>
+      <caption>
+        legenda ta tabela
+      </caption>
+      <colgroup>
+        <col span="1" style="background-color: chartreuse" />
+        <col span="2" style="background-color: blue" />
+      </colgroup>
+      <!-- na tag <cpçgrpup> quando passa dentro delas as colunas tag <col> podemos estilizar melhor no css 
+      porem a melhor forma e criar uma classe e trabalhar no css.. essa tags sao opcionais-->
+      <thead>
+        <tr>
+          <th>primeira</th>
+          <th>segunda</th>
+          <th>terceira</th>
+        </tr>
+      </thead>
+      <!-- a tag <tr> dentro do thead e para nomear a colula a tag <th> e para inserir a inforcaçao ou seja no nosso caso a coluna 1 tera o nome primeira, a coluna 2 tera o nome segunda e a coluna 3 terceira -->
+      <tbody>
+        <tr>
+          <td>informacao 1</td>
+          <td>informacao 2</td>
+          <td>informacao 3</td>
+        </tr>
+        <tr>
+          <td>informacao 4</td>
+          <td>informacao 5</td>
+          <td>informacao 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>rodape1</td>
+          <td>rodape1</td>
+          <td>rodape1</td>
+        </tr>
+      </tfoot>
+
+      <!-- a tag <tr> e a linda da tabela, dentro dela devera ter a tag <td> que e a informacao daquela linha e coluna 
+        a tag <tbody> e o corpo da tabela-->
+    </table>
+    <!-- OBS: ESSA APLICACAO DE TABELA NAO SE USA MAIS... POREM PODEMOS ENCONTRAR EM ALGUMAS PAGINA  -->
   </body>
 </html>
