@@ -1,0 +1,76 @@
+/* type selectors using in CSS:
+
+TAG: seletors general ex: h1, h2, p
+
+ID: unical elemet  ex: <h2 id="test"> 
+
+CLASS: the form of styling a determinated bloc, the class is the best way for styling the page
+
+ */
+
+/* TAG */
+
+h1 {
+  color: #8f8f43;
+
+  font-size: 50px;
+}
+
+p {
+  color: blue;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* ID */
+#test {
+  color: aqua;
+  font-size: 25px;
+}
+
+/* CLASS */
+
+.test_class {
+  font-size: 45px;
+  color: #00996b;
+
+  font-style: normal;
+}
+
+/*COMBINING SELECTORS */
+
+.h4 {
+  color: #356087;
+  font-size: 60px;
+}
+/* here only the span tag that is inside the class was styled the class "h4" has another format*/
+.h4 span {
+  color: #060b5f;
+}
+
+p span {
+  color: rgb(8, 247, 235);
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-style: normal;
+  background-color: #060a5fa4;
+  border-radius: 5px;
+}
+/* 
+line-height, is hight line
+text-transform, change the text
+border-radius, rounds the edges
+
+*/
+
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+/* text-decoration removes or add  decoration this case remove the underline of link  */
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
