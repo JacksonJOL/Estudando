@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de Visualização CSS</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      h1 {
+        margin: 2rem;
+        font-size: 10rem;
+        color: darkblue;
+        font-weight: 700;
+      }
+
+      #paragrafo {
+        margin: 2rem;
+        font-size: 2rem;
+        color: rgb(34, 128, 50);
+        font-weight: 700;
+        text-align: start;
+      }
+
+      #p1 {
+        margin: 2rem;
+        font-size: 2rem;
+        color: rgb(85, 6, 6);
+        font-weight: 700;
+        text-align: start;
+        display: block;
+        text-decoration: underline;
+      }
+
+      #p2 {
+        margin: 2rem;
+        font-size: 2rem;
+        color: rgb(184, 129, 12);
+        font-weight: 700;
+        text-align: start;
+        display: inline;
+        text-decoration: double underline;
+      }
+
+      #p3 {
+        margin: 2rem;
+        font-size: 2rem;
+        color: rgb(100, 7, 143);
+        font-weight: 700;
+        text-align: start;
+        display: inline-block;
+        text-decoration: dashed underline;
+      }
+
+      #p4 {
+        margin: 2rem;
+        font-size: 2rem;
+        color: rgb(12, 184, 64);
+        font-weight: 700;
+        text-align: start;
+        display: none;
+        text-decoration: solid underline yellow;
+      }
+      #p4a{
+        color: blue;
+        font-weight: 700;
+        font-size: 3rem;
+      }
+    </style>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>4 Displays basicos</h1>
+        <p id="paragrafo">
+          Nesse modulo veremos os 4 tipos de <span>DISPLAY</span>  basicos
+        </p>
+      </section>
+      <section>
+        <p id="p1">
+          <b>Display em bloco</b> ocupa toda a linha independente do tamnho do
+          conteudo a tag = display: block; clicando em f12 na pagina vera q a
+          visualizacao e em bloco ocupando toda area da pagina
+          <b>BLOCK FICAM SEMPRE UM EMBAIXO DO OUTRO</b>
+          <p id="p1">aplica-se o box model, margim e padding fucionam normalmente</p>
+        </p>
+      </section>
+      <section>
+        <p id="p2">
+          <b>Display inline</b> ocupa somente ate onde vai o conteudo!!
+          <b>INLINE FICAM SEMPRE UM AO LADO DO OUTRO</b>
+          <p id="p2">box model nao se aplica o margin e padding funionam somente na horizontal</p>
+        </p>
+      </section>
+
+    
+
+      <section>
+        <p id="p3"><b>Display inline - block</b> ocupa somente ate onde vai o conteudo!!
+          <b>INLINE-BLOCk  FICAM SEMPRE UM AO LADO DO OUTRO</b>
+        <p id="p3">box model se aplica a margin e padding funcionam normalmente</p>
+        </p>
+      </section>
+
+
+      <section>
+        <p id="p4">Display-none oculta todo o display</p>
+        <p id="p4a">o conteudo iserido no html fica oculto na visualizacao quando aplicamos o display none aplica-se quando voce quer ocultar alguma stilizacao da pagina de outros usuarios</p>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

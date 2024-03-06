@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletor Universal e Heranca de estilo</title>
+  </head>
+  <body>
+    <style>
+      * {
+        color: blue;
+      }
+
+      h2 {
+        color: red;
+      }
+    </style>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h1>Seletor Universal</h1>
+          <p>
+            o seletor universal seleciona todos os elementos da pagina ex: *
+          </p>
+          <p>
+            porem o seletor aplicado a uma TAG ira passar por cima do seletor
+            universal
+          </p>
+
+          <h2>
+            Aqui vai ficar na cor vermelho pois o estilo sera aplicado a tag H2
+          </h2>
+
+          <p>
+            <strong
+              >sempre deixar a margin e o padding no seletor universal como zero
+              0
+            </strong>
+          </p>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

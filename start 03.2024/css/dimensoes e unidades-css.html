@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimensões e Unidades no CSS</title>
+  </head>
+  <body>
+    <style>
+
+      html{
+        font-size: 18px;
+      }
+      #dimensoes {
+        background-color: red;
+        padding: 10px 10px 10px 10px;
+        width: 150px;
+        height: 400px;
+      }
+
+      #un-absoluta {
+        width: 500px;
+        height: 100px;
+        background-color: blue;
+        color: aliceblue;
+      }
+
+      #un-relativa {
+        height: 50vw;
+        background-color: green;
+      }
+
+      #div-em {
+        font-size: 30px;
+        background-color: chartreuse;
+      }
+      #p-em {
+        font-size: 2em;
+      }
+
+      #p-rem{
+        font-size: 2rem;
+      }
+    </style>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <section>
+        <div id="dimensoes">
+          <h1>Estudando dimensões</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            voluptas dolorem culpa eius odit sed fuga earum repellat, quisquam,
+            quas laboriosam dolore eaque harum ex vel! Veritatis debitis aliquam
+            blanditiis!
+          </p>
+        </div>
+
+        <div>
+          <h2>Estudando unidades</h2>
+          <p id="un-absoluta">
+            Unidades ABSOLUTA elas nao sofrem alteracoes e nao depende de nada..
+            ex: 1px sempre sera 1px, assim como 1 cm sempre sera 1cm
+          </p>
+        </div>
+        
+          <h3>unidades RELATIVAS dependem de algo</h3>
+          <p>
+            vh = viewport height = é o tamanho da tela no computador, notbook
+            etc.
+          </p>
+          <p>
+            vw = viewport width = é a largura da tela no computador, notbook,
+            etc
+          </p>
+
+          <div id="div-em">
+            <p>
+              em = o "em" herda da tag pai.. neste texto onde eu nao passo uma
+              tag de formatacao ele pega os 30px de tamanho da div, ja no
+              paragrafo abaixo como eu uso a tag p-em e estilizo para 2em o
+              texto fica com 60px ou seja, pega o valor da tag pai div com 30px
+              e multiplica por 2
+            </p>
+            <p id="p-em">
+              em = esta relacionado a heranca do pai ex: h1 esta dentro de uma
+              div se eu estilizar a fonte da div com 16px e eu quiser que esse
+              h1 tenha 32px eu devo colocar a fonte do h1 com 2em assim ele ira
+              pegar a tag pai DIV e multiplicar por 2
+            </p>
+          </div>
+
+      
+          <p>aqui um paragrafo pegando a font-size do tamanho na tag html e abaixo o "rem" sendo aplicado 2rem ou seja pega a fonte do html e multiplica por 2 ignorando toda outra estilização</p>
+          <div><p id="p-rem">rem = e o mesmo conceito do  "em" porem nao herda do elemento pai, e sim do "html" </p></div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

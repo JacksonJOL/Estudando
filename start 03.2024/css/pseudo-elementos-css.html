@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo elementos CSS</title>
+  </head>
+  <body>
+    <style>
+      p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      p::before {
+        content: "paragrado ";
+        color: rgb(2, 31, 31);
+        font-weight: 700;
+      }
+
+      /* TANTO O AFTER QUANTO O BEEFORE APARECEM NA PAGINA POREM ELES NAO PODEM SER COPIADOS COMO OS DEMAIS TEXTO POIS ELES ESTAO DENTRO DO CSS */
+      p::after {
+        content: " fim";
+        color: rgb(3, 24, 24);
+        font-weight: 700;
+      }
+    </style>
+
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Pseudo Elementos</h1>
+        <p>
+          Pseudo elementos sao palavras chaves utilizadas na tag porem
+          representa o elemento filho dele mesmo para utilizar o pseudo
+          elementos usa :: ex: p::
+        </p>
+
+        <p>Testeanto pseudo elementos</p>
+
+        <p>
+          SEMPRE VISITAR A PAGINA MDN WEB DOCS PARA VERIFICAR DOCUMENTACAO SOBRE
+          HTML CSS JS
+        </p>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
