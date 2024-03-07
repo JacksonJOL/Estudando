@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      #static {
+        width: 20rem;
+        height: 20rem;
+        background-color: blue;
+        box-shadow: 1rem 1rem 1rem rgba(9, 9, 209, 0.473);
+        border-radius: 2rem;
+      }
+
+      #relative {
+        position: relative;
+        left: 20rem;
+        width: 20rem;
+        height: 20rem;
+        background-color: green;
+        margin: 2rem;
+        box-shadow: 1rem 1rem 1rem rgb(93, 177, 93);
+        border-radius: 4rem;
+      }
+
+      #absolute {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        margin: 2rem;
+        background-color: yellow;
+        box-shadow: 1rem 1rem 1rem rgb(224, 224, 112);
+      }
+      p {
+        position: absolute;
+        bottom: 0;
+        right: 0rem;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      #fixed {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 20rem;
+        height: 20rem;
+        background-color: red;
+        box-shadow: 1rem 1rem 1rem rgba(235, 5, 5, 0.849);
+        border-radius: 50rem;
+      }
+    </style>
+
+    <header>
+      <!-- TIPOS DE POSICIONAMENTOS
+
+      STATIC = PADRAO DO HTML, SE NAO DEFINIR NENHUM VALOR SEMPRE SERA STATIC
+
+      RELATIVE = COMECA A PARTIR DO STATICO MOVENDO DE ACORDO COM O VALOR NO EXEMPLO MOVI A CAIXA VERDE NO POSICIONAMENTO RELATIVO 20REM ESQUERDA... 
+      
+
+
+      ABSOLUTE = POSICIONAMENTO ABSOLUTO DE UM ELEMENTO EM RELACAO A OUTRO
+      OBS::::LEMBRAR DE COLOCAR COM POSICIONAMENTO RELATIVO O ELEMENTO PARA O QUAL VOCE ESTA BUSCANDO O POSICIONAMENTO ABSOLUTO....NO NOSSO CASO COLOQUEI A CAIXA AMARELA COM POSICIONAMENTO RELATIVO  E COLOQUEI O PARAGRAFO COM POSICIONAMENTO ABSOLUTE A CAIXA.... 
+
+      OBS: MESMO EU MUDANDO O TAMANHO DA CAIXA AMARELA.... O PARAGRADO "TESTE" SEMPRE FICARA NA MESMA POSICAP
+
+   
+      FIXED = É O POSICIONAMENTO FIXO EM DETERMINADA PARTE DA TELA... INDEPENDENTE DO TAMANHO DA PAGINA BARRA DE ROLAGEM E AFINS O ELEMENTO FIXADO SEMPRE FICARA APARENTE NA TELA
+      NO CASO AS LOGOS DO WHATSAPP NAS PAGINAS 
+
+      NO NOSSO ESTUDO O QUADRADO VERMELHO SEMPRE FICARA VISIVEL NO CANTO DIREITO DA PAGINA
+
+
+    
+    -->
+      <nav></nav>
+    </header>
+
+    <main>
+      <div id="static"><p></p></div>
+      <div id="relative"></div>
+      <div id="absolute"><p>Teste</p></div>
+      <div id="fixed"></div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

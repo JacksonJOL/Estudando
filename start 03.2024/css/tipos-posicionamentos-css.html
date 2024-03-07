@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de posicionamentos CSS</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: "montserrat", sans-serif;
+      }
+
+      div {
+        width: 30rem;
+        height: 20rem;
+        background-color: chartreuse;
+        color: rgba(224, 33, 138, 0.856);
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      p,
+      a {
+        width: 50rem;
+        font-size: inherit;
+        color: inherit;
+      }
+
+      #paragrafo {
+        font-size: 2rem;
+        background-color: red;
+        font-weight: 800;
+      }
+
+
+    
+    </style>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+    
+        <div>
+          <p><a href="">link!!</a></p>
+
+          <p>paragrafo dentro da div</p>
+        </div>
+      
+
+        <p id="paragrafo">
+          OBS: NA TAG "ancora link!!" que esta dentro do paragrafo dentro da
+          div, na estilizacao do paragrafo esta com font-size: inherit, color:
+          inherit isso signica que essas estilizacoes vao pegar a HERANCA da tag
+          PAI que nesse caso é a DIV.... <strong>porem como podemos analisar a tag width que esta no estilo p, a foi acatada sobrepondo a estilizacao da div.. pois nao se trata de heranca</strong>
+          <p id="paragrafo">paragrafo fora da div</p>
+        </p>
+    
+        <h2>TIPOS DE POSICIONAMENTOS</h2>
+
+
+
+
+
+
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
