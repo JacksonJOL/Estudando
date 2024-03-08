@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgroud color e image CSS</title>
+  </head>
+
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: "montserrat", sans-serif;
+      }
+
+      #div-h1 {
+        margin: 5rem;
+        font-size: 5rem;
+        background-color: #a1f3b4;
+        background-image: linear-gradient(180deg, #18d822, rgb(144, 211, 223));
+        padding: 2rem;
+        border-radius: 8rem;
+        text-shadow: 0.3rem 0.3rem 0.5rem #be103c;
+      }
+
+      #div-h2 {
+        margin: 5rem;
+        font-size: 5rem;
+        color: rgb(19, 18, 18);
+        background-image: url(https://media.istockphoto.com/id/1402801804/pt/foto/closeup-nature-view-of-palms-and-monstera-and-fern-leaf-background.jpg?s=1024x1024&w=is&k=20&c=C8LVGHcrW2zkt3_rFWX4bOU6HksjgFnME-33Ip9JJP4=);
+        /* PODEMOS ADICIONAR MAIS DE UMA IMAGEM AO  BLOCO   URL(); URL() GERALMENTE NAO E UTILIADO DUAS IMAGENS DE FUNDO O QUE SE VE E UMA IMAGEM COM GRADIENTE OU UMA LOGO OU ALGO TRANSPARENTE PARA UMA NAO FICA SOBRE A OUTRA */
+
+        padding: 2rem;
+        border-radius: 8rem;
+        background-position: 15rem;
+        /* O BACKGROUND POSITION IRA DEFINIR A POSICAO UTILIZADA DA IMAGEM EM RELACAO AO BLOCO */
+        background-size: contain;
+        /* background-repeat: no-repeat; */
+        /* DENTRO DO BACKGROUND SIZE TEMOS 2 VARIACOES IMPORTANTES
+
+        1 - **CONTAIN** =  A IMAGEM ADICIONADA OCUPARA O ESPACO DE TODO O BLOCO
+        OBS: CASO A IMAGEM SEJA MUITO PEQUENA EM RELACAO AO BLOCO ELA IRA SE REPETIR ATE OCUPAR TODO O BLOCO
+        NESSE CASO DEVEREMOS USAR O "BACKGROUND-REPEAT: NO-REPEAT"
+
+        2 -  **COVER** COM O COVER A IMAGEM IRA COBRIR TODA O BLOCO */
+        text-align: center;
+        text-shadow: 0.3rem 0.3rem 0.5rem rgb(139, 139, 42);
+        /* background-position: 505rem; */
+      }
+
+      #div-p {
+        margin: 5rem;
+        font-size: 5rem;
+        background-color: #a1f3b4;
+        padding: 2rem;
+        border-radius: 8rem;
+      }
+    </style>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <section>
+        <div id="div-h1">
+          <h1>Meu Título</h1>
+        </div>
+        <div id="div-h2">
+          <h2>Jackson</h2>
+        </div>
+
+        <div id="div-p">
+          <p>
+            My name is Jackson, i'm 40 year old, i'm from Bahia, i was born in
+            the of Satana City, but i live in Aparecida de Goiania, i'm married,
+            i don't have kids, i studying to change career, i want to become a
+            web dev
+          </p>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

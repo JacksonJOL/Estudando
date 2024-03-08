@@ -1,44 +1,81 @@
-h1,
-h2,
-h3,
-p,
-a,
-li,
-figcaption {
+html {
+  font-size: 62.5%;
   font-family: "montserrat", sans-serif;
 }
 
+* {
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+  font-size: 1.8rem;
+}
+
+hr {
+  display: none;
+}
+
+a:hover {
+  color: #0588c4;
+}
+h1::first-letter {
+  font-size: 6.4rem;
+}
+
+/* SECAO CONDICOES */
+.condicoes {
+  width: 32px;
+  height: 24px;
+  background-color: #035276;
+  color: #fff;
+  box-shadow: 15px 4px 16px black;
+  border-radius: 2rem;
+  margin-bottom: 32px;
+}
+
+figure {
+  margin-bottom: 32px;
+}
+
 h1 {
-  font-size: 45px;
+  margin-bottom: 32px;
+  font-size: 4.5rem;
   line-height: 1;
 }
 h2 {
-  font-size: 32px;
+  margin-bottom: 24px;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 h3 {
-  font-size: 24px;
+  margin-bottom: 18px;
+  font-size: 2.4rem;
   line-height: 1.2;
 }
 
 p {
-  font-size: 18px;
+  margin-bottom: 6px;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 
 figcaption {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-style: italic;
 }
 
 a {
+  margin-bottom: 24px;
   color: #c44105;
   font-size: 24px;
   font-weight: 700;
   text-decoration: double underline;
 }
-
+ul {
+  margin: 24px;
+  margin-bottom: 24px;
+}
 li {
+  margin-bottom: 6px;
   color: #035276;
   font-style: italic;
 }
@@ -49,16 +86,37 @@ h1 span {
 
 .realce,
 p span {
-  color: #0588c4;
+  color: #fff;
   font-weight: 700;
 }
 
 .realce-italico {
-  color: #0588c4;
+  color: #78d4ff
   font-style: italic;
 }
 
 .realce-em {
-  color: #0588c4;
+  color:#78d4ff;
   text-decoration: underline;
+}
+
+.logo-whats{
+  /* width: 85px;
+  position: fixed; 
+  background-image: url("https://www.hashtagtreinamentos.com/wp-content/uploads/2023/06/whatsapp-logo-2.png");
+  background-repeat: no-repeat;
+  bottom: 10px; */
+  position: fixed;
+  bottom: 2rem;
+
+  width: 85px;
+  height: auto;
+ /* margin-block-end: 10px; */
+ /* margin-bottom: 10px; */
+  /* background-color: red; */
+  /* box-shadow: 1rem 1rem 1rem rgba(235, 5, 5, 0.849); */
+  /* border-radius: 50rem; */
+ 
+
+
 }
