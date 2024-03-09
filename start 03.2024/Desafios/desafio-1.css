@@ -1,81 +1,111 @@
-html {
-  font-size: 62.5%;
-  font-family: "montserrat", sans-serif;
-}
-
 * {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  line-height: 1.4;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
   font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+section {
+  padding: 2.4rem;
 }
 
 hr {
   display: none;
 }
 
-a:hover {
-  color: #0588c4;
-}
 h1::first-letter {
   font-size: 6.4rem;
 }
 
 /* SECAO CONDICOES */
 .condicoes {
-  width: 32px;
-  height: 24px;
+  display: inline-block;
   background-color: #035276;
   color: #fff;
-  box-shadow: 15px 4px 16px black;
+
+  box-shadow: 0 0 1.6rem 0.4rem rgba(0, 0, 0, 0.15);
+
   border-radius: 2rem;
-  margin-bottom: 32px;
+  padding: 2.4rem 3.2rem;
 }
 
 figure {
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 h1 {
-  margin-bottom: 32px;
+  font-size: 4.5rem;
+  margin-bottom: 3.2rem;
   font-size: 4.5rem;
   line-height: 1;
 }
 h2 {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   font-size: 3.2rem;
   line-height: 1.1;
 }
 h3 {
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
   font-size: 2.4rem;
   line-height: 1.2;
 }
 
+/*
+
+A ESTILIZACAO DO PARAGRAFO NAO SE FAZ NECESSARIA
+JA QUE O DEVERIA SER APLICADO A ELE JA VEM COMO
+HERANCA DO SELETOR UNIVERSAL
+BODY
+
 p {
-  margin-bottom: 6px;
+
   font-size: 1.8rem;
   line-height: 1.4;
+} */
+
+p {
+  margin-bottom: 0.6rem;
 }
+/* FOI NECESSARIO CRIAR A ESTILIZACAO PARA O PARAGRA
+PARA INCLUIR A MARGEM EXTERNA INFERIOR JA QUE
+ELA E ESPECIDA PARA O PARAGRADO NAO PODENDO SER UMA HERDEIRA */
 
 figcaption {
   font-size: 1.2rem;
   font-style: italic;
+  margin-left: 3.2rem;
 }
 
-a {
-  margin-bottom: 24px;
+a:link,
+a:visited {
+  margin-bottom: 2.4rem;
   color: #c44105;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: double underline;
+  display: inline-block;
 }
+a:hover,
+a:active {
+  color: #0588c4;
+}
+
 ul {
   margin: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+  margin-left: 2.4rem;
 }
 li {
-  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
   color: #035276;
   font-style: italic;
 }
@@ -91,32 +121,39 @@ p span {
 }
 
 .realce-italico {
-  color: #78d4ff
+  color: #0588c4;
   font-style: italic;
 }
 
+.condicoes .realce-italico {
+  color: #78d4ff;
+}
+
 .realce-em {
-  color:#78d4ff;
+  color: #0588c4;
   text-decoration: underline;
 }
 
-.logo-whats{
+.logo-whats {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 8.5rem;
+
   /* width: 85px;
   position: fixed; 
   background-image: url("https://www.hashtagtreinamentos.com/wp-content/uploads/2023/06/whatsapp-logo-2.png");
   background-repeat: no-repeat;
   bottom: 10px; */
-  position: fixed;
-  bottom: 2rem;
 
-  width: 85px;
-  height: auto;
- /* margin-block-end: 10px; */
- /* margin-bottom: 10px; */
+  /* bottom: 2rem;
+  margin-left: 1rem;
+  margin-top: auto; */
+
+  /* height: auto; */
+  /* margin-block-end: 10px; */
+  /* margin-bottom: 10px; */
   /* background-color: red; */
   /* box-shadow: 1rem 1rem 1rem rgba(235, 5, 5, 0.849); */
   /* border-radius: 50rem; */
- 
-
-
 }
