@@ -88,7 +88,7 @@
     </ul> -->
     <!-- -------------------------------------------------------------------------- -->
 
-    <!-- ----------------------------------------------- Z - INDEX ----------------------------------------------------------------------------------- -->
+    <!-- -------------------------- Z - INDEX e POSITION STICK--------------------------------------------------- -->
 
     <!-- --------------------- QUANTO MAIOR O Z-IDEX APLICADO A UM ELEMENTO FAZ COM QUE TODOS OS OUTROS ELEMENTOS PASSEM POR BAIXO DELE... CASO A GENTE TENHA UM ELEMENTO PRINCIPAL E 
                                POR ACASO UM ELEMENTO NAO IMPORTANTE PASSE POR CIMA DELE BASTA ADICIONAR UM Z-IDEX ALTO NO ELEMENTO PRINCIPAL E O PROBLEMA SERA RESOLVIDO 
@@ -152,5 +152,106 @@ VER NO GO LIVE EM CASO DE DUVIDA   S -->
     <h1>testando aplicando uma borda em formato de pipe</h1> -->
 
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- ....................-------------ESTUDANDO ESPECIDICIDADE-------------------------------------------------------------- -->
+
+    <!-- <style>
+      p {
+        font-weight: 800;
+        color: red;
+        font-size: large;
+      }
+
+      p {
+        color: blue;
+      }
+      /* CASO TENHA SELETORES IGUAIS SEMPRE SERA A ULTIMA DECLARACAO A SER CONSIDERADA   NO CASO ACIMA O PARAGRAFO MANTEVE A "FONT-WEIGHT E A FONT-SIZE" POREM MODIFICOU A COR POIS ABAIXO TEM OUTRO ELEMENTO P COM A COR AZUL, E COMO ELE FOI O ULTIMO A SER CRIADO ELE APLICA A ESTILIZACAO ELE TEM PRIORIDADE SOBRE O PRIMEIRO*/
+
+      div.outer p {
+        color: orange;
+      }
+      div:not(.outer) p {
+        color: rgb(0, 47, 255);
+      }
+      /* -------------------------------------------------------------------------------------------- */
+      /* #foo {
+        color: rgb(222, 238, 6);
+      }
+      [id="foo"] {
+        background: purple;
+        color: chartreuse;
+      } */
+      /* AQUI A ID DENTRO DE COLCHETES APLICA TAMBEM UMA ESTILIZACAO AO ELEMENTO POREM NAO SOBRESCREVE A APLICACAO JA INCLUIDA  NO ELEMENTO SUPERIOR NESSE CASO A COR CHARTREUSE NAO FOI APLICADA AO ELEMENTO JA QUE O ELEMENTO QUE VEIO PRIMEIRO JA DEFINIU A COR PURPLE */
+      /* --------------------------------------------------------------------------------------- */
+    </style> -->
+    <!-- <div>
+      <p>OLA MUNDO</p>
+    </div>
+
+    <div class="outer">
+      <p>Esta é a div outer.</p>
+      <div class="inner">
+        <p>Este texto está na div inner.</p>
+      </div>
+    </div>
+
+    <p id="foo">Eu sou um simples texto.</p> -->
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- -------------------------------------------- PSEUDO - CLASSES---------------------------------------------------------------------- -->
+    <!-- <style>
+      p:hover {
+        color: aqua;
+        background-color: darkblue;
+      }
+      /* A COR DO TEXTO E FORMATACAO ESTA PADRAO DO HTML POREM TODA VEZ Q O USUARIO PASSAR O MOUSE POR CIMA ELE IRA ASSUMIR A ESTILIZACAO COM O HOVER MUDANDO O FUNDO E TBM A COR FONTE */
+      /* ----------------------------------------------------------------------------- */
+    </style>
+    <p>bom dia</p> -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- -----------------------------------------------PSEUDO ELEMENTOS----------------------------------------------------------------- -->
+
+    <!-- <style>
+      p::after {
+        content: "FIM";
+      }
+      p::before {
+        content: "INICIO_";
+      }
+    </style>
+    <p>ola mundo_</p> -->
+    <!-- O PSEUDO ELEMENTO AFTER IRA ADICIONAR AO FINAL DO CONTEUDO DO SELETOR QUALQUER INSTRUCAO QUE TIVER DENTRO DO CONTENT
+    NESSE CASO O PARAGRAFO IRA RECEVER NO SEU FINAL A PALAVRA FIM ASSIM COMO O BEFORE IRA INCLUIR A PALAVRA INICIO -->
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------ADICIONANDO IMAGENS-------------------------------------------------------------- -->
+    <style>
+      /* AQUI UMA IMAGEN USANDO O BACKGROUND SIZE CONTAIN COM O NO REPEAT 
+      POREM MEU ESPACO E MUITO MAIOR E MINHA IMAGEM ESTA OCUPANDO SOMENTE UMA PARTE DO MEU BOX*/
+      p {
+        padding: 100px;
+        margin: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(https://s2-techtudo.glbimg.com/L9wb1xt7tjjL-Ocvos-Ju0tVmfc=/0x0:1200x800/984x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/q/l/TIdfl2SA6J16XZAy56Mw/canvaai.png);
+      }
+
+      /* AQUI UMA IMAGEN USANDO O BACKGROUND SIZE COVER
+      COMO PODEMOS PERCEBER AQUI ELE PEGA SOMENTE UMA PARTE DA IMAGEM PRESERVANDO A PROPORCAO E APLICA AO FUNDO COMO O ESPACO E MUITO MAIOR EM RELACAO A IMAGEM LOGO NAO IRA APARECER A IMAGEM COMPLETA*/
+      h2 {
+        transform: rotate(-15deg);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.506);
+        border-radius: 15px;
+        padding: 100px;
+        margin: 100px;
+        background-size: cover;
+        background-image: url(https://s2-techtudo.glbimg.com/L9wb1xt7tjjL-Ocvos-Ju0tVmfc=/0x0:1200x800/984x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/q/l/TIdfl2SA6J16XZAy56Mw/canvaai.png);
+      }
+    </style>
+    <p></p>
+    <h2></h2>
   </body>
 </html>
