@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.4;
+        color: #404040;
+      }
+
+      h1 {
+        font-size: 3.32rem;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+      }
+
+      main {
+        display: flex;
+        /* 
+        FLEX CONTAINER... MAIN AXIXS É O POSICIONAMENTO HORIZONTAL E O CROSS AXIS E O POSICIONAMENTO VERTICAL
+        O MAIN É COMO SE FOSSE O SELETOR UNIVERSAL PARA APLICACAO DO DISPLAY FLEX  GERALMENTE AS ESLITIZACOES PADROES PARA TODOS OS ELEMENTOS  SAO APLICADAS NO MAIN.. E AS ESPECIFICAS DE CADA ELEMENTO SAO NOS SELERORES E CLASSES DO PROPRIO ELEMENTO*/
+
+        gap: 2rem;
+        /* O GAP DEFINE OS ESPACOS ENTRE AS LINHAS E COLUNAS DOS ELEMENTOS */
+
+        /* row-gap: 3rem; */
+        /* O ROW-GAP DEFINE OS ESPACOS ENTRE AS LINHAS DOS ELEMENTOS */
+
+        /* column-gap: 5rem; */
+        /* O COLUMN-GAP DEFINE OS ESPACOS ENTRE AS COLUNAS DOS ELEMENTOS */
+
+        /* flex-direction: column; */
+        /*  O FLEX DIRECTION DEFINE O POSICIONAMENTO DO ELEMENTO.. O COLLUN TRANSFORMA O CONTEUDO EM COLUNAS     O ROW EM LINHAS     UTILIZANDO O ROW-REVERSE ELE TRAZ O ULTIMO CONTEUDO PARA A PRIMEIRA LINHA*/
+
+        /* flex-wrap: wrap; */
+        /*  O FLEX WRAP QUEBRA AS LINHAS E NOWRAP NAO */
+
+        /* flex-flow: column wrap; */
+        /*  O FLEX-FLOW ABRANGE A COLUMN E OS WRAP, SENDO MELHOR Q CRIAR SEPARADOS */
+
+        flex-flow: row;
+        /*    ADICIONEI ABAIXO NA SECAO O FLEX-BASIS QUE DEFINE O TAMANHO DO ELEMENTO E ACIMA INDICO QUE E EM LINHA E QUE PODE QUEBRAR... SENDO ASSIM NA MINHA VISUALIZACAO EU IRIA VER DOIS ELEMENTOS
+        NA PRIMEIRA LINHA E UM NA LINHA ABAIXO POIS OS 3 NAO CABERIA NA MESMA LINHA DEVIDO AO TAMANHO ADICIONADO AO FLEX-BASIS DE 700PX */
+      }
+
+      section {
+        /* flex-grow: 1;
+        flex-basis: 0;
+        flex-shrink: 2; */
+        flex: 1 1 20rem;
+        /* O FLEX BASIS DEFINE O TAMANHO DO ELEMENTO NESSE EXEMPLO DIZ QUE A CAIXA TEM 700PX 
+        SE EU MUDAR O FLEX-BASIS PARA 100REM POR EXEMPLO E DEIXAR O FLEX-FLOW: ROW WRAP ELE IRA QUEBRAR EM 3 COLUNAS POIS O ESPACO NAO PERMITE OS 3 ELEMENTOS AGRUPADOS NA MESMA LINHA  O USO GERAL DO FLEX-BASIS E PARA DEFINIR UM TAMANHO MINIMO DE UM ELEMENTO.. POR EX. SE O TEXTO PRA FICAR LEGIVEL PRECISA TER UM ESPACO DE 200PX VC DEFINE ISSO NO BASIS COMO 200 POIS SABE SE FO ABAIXO DISSO NAO IRA FICAR BOM
+        
+        O FLEX-SHRINK E O QUANTO PODE SE ENCOLHER REFERENTE AO ELEMENTO QUANDO QUEREMOS QUE UM ELEMENTO SEJA MENOR QUE O OUTRO
+
+        O INDICADO PARA USO SOMENTE A FLEX: POIS ELA COMPORTA TANDO DENTRO DA SUA PROPRIEDADE TANTO O FLAX-GROW, FLEX-SHRINK E O FLEX-BASIS
+
+
+        FLEX-BASIS; UNIDADE
+        FLEX-GROW; FATOR/NUMERO
+        FLEX-GROW, FLEX-BASIS
+        FLEX-GROW, FLEX-SHRINK FLEX-BASIS
+
+
+
+
+        */
+      }
+
+      section:first-child {
+        /* flex-grow: 2; */
+        flex: 2 1 0;
+        background-color: rgb(238, 138, 138);
+      }
+
+      section:nth-child(2) {
+        background-color: rgb(142, 236, 142);
+      }
+
+      section:nth-child(3) {
+        /*  FLEX-GROW IRA PEGAR O VALOR QUE ESTA SOBRANDO E DIVIDIR PELOS ELEMENTOS E APLICAR O CALCULO ATRIBUIDO EX: MEU ESPACO E DE 4 VAGAS E EU TENHO 3 ELEMENTOS  ELE PEGA OS ESPACO DISPONIVEL DIVIDE ENTRE OS ELEMENTOS DO FLEX GROW... ACIMA EU INFORMO QUE O FLEXGROW E DE 2 POREM NADA VAI MUDAR POIS NAO HA ESPACO DISPONIVEL
+        EX: DA CONTA SE EU TENHO UM ESPACO DE 542, 3 ELEMENTOS, PRIMEIRO RECEBE 1, SEGUNDO RECEBE 1 E O TERCEIRO RECEBE 2, EU IREI PEGAR 542/4, OU SEJA O PRIMEIRO IRA SER 135.5 O SEGUNDO 135.5 E O TERCEIRO 271  */
+        background-color: rgb(184, 133, 231);
+        flex: 3;
+        /* RECEBENDO 3 PARTES DIVIDIDAS DO TODO */
+      }
+    </style>
+    <main>
+      <section>
+        <h1>MEU TITULO</h1>
+        <h2>PRIMEIRA SECAO</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          sagittis elementum enim tempus aliquet. Donec eleifend massa tortor.
+          Quisque aliquet ac lacus sed convallis. Vestibulum euismod finibus
+          malesuada. Donec egestas a neque ut ullamcorper. Proin ligula elit,
+          volutpat et augue sit amet, laoreet porta risus. Nulla placerat purus
+          velit. Maecenas feugiat risus ut interdum elementum. Etiam tempus
+          velit sapien. Suspendisse et eleifend urna. Vivamus consequat lacinia
+          urna sed accumsan. Mauris interdum lectus vitae tempor rutrum.
+        </p>
+      </section>
+      <section>
+        <h2>SEGUNDA SECAO</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          sagittis elementum enim tempus aliquet. Donec eleifend massa tortor.
+          Quisque aliquet ac lacus sed convallis. Vestibulum euismod finibus
+          malesuada. Donec egestas a neque ut ullamcorper. Proin ligula elit,
+          volutpat et augue sit amet, laoreet porta risus. Nulla placerat purus
+          velit. Maecenas feugiat risus ut interdum elementum. Etiam tempus
+          velit sapien. Suspendisse et eleifend urna. Vivamus consequat lacinia
+          urna sed accumsan. Mauris interdum lectus vitae tempor rutrum.
+        </p>
+      </section>
+      <section>
+        <h2>TERCEIRA SECAO</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          sagittis elementum enim tempus aliquet. Donec eleifend massa tortor.
+          Quisque aliquet ac lacus sed convallis. Vestibulum euismod finibus
+          malesuada. Donec egestas a neque ut ullamcorper. Proin ligula elit,
+          volutpat et augue sit amet, laoreet porta risus. Nulla placerat purus
+          velit. Maecenas feugiat risus ut interdum elementum. Etiam tempus
+          velit sapien. Suspendisse et eleifend urna. Vivamus consequat lacinia
+          urna sed accumsan. Mauris interdum lectus vitae tempor rutrum.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
