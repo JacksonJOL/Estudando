@@ -13,6 +13,67 @@ body {
   font-size: 1.8rem;
   line-height: 1.4;
 }
+/* ----------GERAL---------- */
+
+/* display: flex;
+  gap: 2rem; */
+/* flex-direction: column; */
+/* justify-content: center;
+  align-items: center; */
+
+/* flex-direction: row;
+  justify-content: center; */
+
+/* .titulo {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.caracteristicas {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* -------------------- */
+figure {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.preco-conficoes-link {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.preco {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.imagem img {
+  width: 30rem;
+}
+/* .titulo {
+  justify-content: center;
+  align-items: center;
+
+  
+} */
+
+/* .segunda-secao {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.4rem;
+}
+
+.titulo-segunda-secao {
+  flex-direction: row;
+} */
 
 section {
   padding: 2.4rem;
@@ -31,30 +92,22 @@ h1::first-letter {
   display: inline-block;
   background-color: #035276;
   color: #fff;
-
   box-shadow: 0 0 1.6rem 0.4rem rgba(0, 0, 0, 0.15);
-
   border-radius: 2rem;
   padding: 2.4rem 3.2rem;
 }
 
-figure {
-  margin-bottom: 3.2rem;
-}
-
 h1 {
   font-size: 4.5rem;
-  margin-bottom: 3.2rem;
+
   font-size: 4.5rem;
   line-height: 1;
 }
 h2 {
-  margin-bottom: 2.4rem;
   font-size: 3.2rem;
   line-height: 1.1;
 }
 h3 {
-  margin-bottom: 1.8rem;
   font-size: 2.4rem;
   line-height: 1.2;
 }
@@ -72,9 +125,6 @@ p {
   line-height: 1.4;
 } */
 
-p {
-  margin-bottom: 0.6rem;
-}
 /* FOI NECESSARIO CRIAR A ESTILIZACAO PARA O PARAGRA
 PARA INCLUIR A MARGEM EXTERNA INFERIOR JA QUE
 ELA E ESPECIDA PARA O PARAGRADO NAO PODENDO SER UMA HERDEIRA */
@@ -82,12 +132,10 @@ ELA E ESPECIDA PARA O PARAGRADO NAO PODENDO SER UMA HERDEIRA */
 figcaption {
   font-size: 1.2rem;
   font-style: italic;
-  margin-left: 3.2rem;
 }
 
 a:link,
 a:visited {
-  margin-bottom: 2.4rem;
   color: #c44105;
   font-size: 2.4rem;
   font-weight: 700;
@@ -100,12 +148,9 @@ a:active {
 }
 
 ul {
-  margin: 24px;
-  margin-bottom: 2.4rem;
   margin-left: 2.4rem;
 }
 li {
-  margin-bottom: 0.6rem;
   color: #035276;
   font-style: italic;
 }
@@ -116,7 +161,7 @@ h1 span {
 
 .realce,
 p span {
-  color: #fff;
+  color: #78d4ff;
   font-weight: 700;
 }
 
