@@ -75,9 +75,9 @@ input::placeholder {
   color: #757575;
 }
 
-/* .teste-container {
+.secao {
   padding: 7.63rem 2rem;
-} */
+}
 
 .container {
   max-width: 100rem;
@@ -133,6 +133,11 @@ input::placeholder {
 /* Cabeçalho */
 
 .cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
   position: sticky;
   z-index: 9999;
   top: 0;
@@ -141,65 +146,42 @@ input::placeholder {
   padding: 1.6rem 3.12rem;
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
-
-/* _______________________________________________________MEUS TESTES________________________________________________________ */
-/* .teste{
+nav ul {
   display: flex;
-} */
-
-.itens{
-  display: flex;
-  gap: 2rem;
-  flex-flow: row;
-  justify-content:end;
-  /* align-items:center; */
-}
-.teste-imagem{
-  justify-content: left;
-}
-
-.teste-container {
-  display: flex;
-  flex-flow: column;
-  gap: 2rem;
-  padding: 7.63rem 2rem;
-  justify-content: center;
   align-items: center;
+  gap: 2.5rem;
+}
+.contem-filhos {
+  position: relative;
 }
 
-.teste-h1-botao-iframe{
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-
-}
-
-
-.teste-h1-p{
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  gap: 3.12rem;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-.teste-botoes-hero{
-  display: flex;
+/* CAIXA DE ITENS OUTROS CURSOS NO HEADER */
+.contem-filhos ul {
+  display: none;
   flex-flow: column;
-  gap: 2rem;
- 
+  gap: 0;
+  right: 0;
+  width: max-content;
+  align-items: stretch;
+  position: absolute;
+  background-color: white;
+  padding: 0.41rem 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15),
+    inset 0 0.3rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+.contem-filhos ul li {
+  border-bottom: solid 1px rgb(235, 229, 229);
+  padding: 0.41rem 2rem;
 }
 
+.contem-filhos ul li:last-child {
+  border-bottom: none;
+}
 
-/* _______________________________________________________MEUS TESTES________________________________________________________ */
-
-
-/* Temporário */
-
+.contem-filhos:hover ul {
+  display: flex;
+}
 
 .item-lista-cabecalho a {
   color: #112e61;
@@ -216,7 +198,6 @@ input::placeholder {
 
 .item-lista-cabecalho.contem-filhos::after {
   content: "\2bc6";
- 
 }
 
 /* Seção Hero */
@@ -239,7 +220,7 @@ input::placeholder {
 }
 
 .iframe-video {
-  /* display: none; */
+  display: none;
   aspect-ratio: 16/9;
   width: 42rem;
   border-radius: 2.5rem;
@@ -249,23 +230,18 @@ input::placeholder {
 
 .secao-conteudos {
   background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
-  background-position: 50% 0;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .caixa-cursos-hashtag {
-  box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.308);
+  position: relative;
+  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
   border-radius: 2.5rem;
   padding: 2rem;
-  width: 24rem;
-  height: auto;
-  margin-top: 0.5rem;
-  margin: 0.5rem; */
-  position
-  line-height: 01rem;
-  background-color: white;
 }
+
 .caixa-gratuito-h3 {
   background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
 }
