@@ -95,6 +95,7 @@ input::placeholder {
   font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
+  text-align: center;
   border-radius: 3rem;
   padding: 0.65rem 2.5rem;
   color: white;
@@ -209,6 +210,33 @@ nav ul {
   background-size: cover;
 }
 
+.container-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.12rem;
+  align-items: center;
+}
+
+.iframe-video {
+  aspect-ratio: 16/9;
+  border-radius: 2.5rem;
+  flex: 5;
+}
+
+.hero-coluna {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  flex: 6;
+  align-items: stretch;
+}
+
+.hero-botoes {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+}
+
 .hero-botao {
   background-image: linear-gradient(180deg, #ff645e, #ff9253);
 }
@@ -219,14 +247,31 @@ nav ul {
   background-image: none;
 }
 
-.iframe-video {
-  display: none;
-  aspect-ratio: 16/9;
-  width: 42rem;
-  border-radius: 2.5rem;
+/* Seção Conteúdos Gratuitos */
+
+.conteudos-titulo {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
 }
 
-/* Seção Conteúdos Gratuitos */
+.conteudos-lista-redesociais {
+  display: flex;
+  flex-flow: column;
+  gap: 0.65rem;
+}
+
+.conteudos-caixa-logo {
+  display: flex;
+  gap: 0.82rem;
+  align-items: center;
+}
+
+.gratuito-link-lista li {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
 
 .secao-conteudos {
   background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
@@ -235,7 +280,16 @@ nav ul {
   background-size: cover;
 }
 
+.caixas-cursos-hastag {
+  display: flex;
+  gap: 2rem;
+}
+
 .caixa-cursos-hashtag {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.6rem;
   position: relative;
   box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
   border-radius: 2.5rem;
