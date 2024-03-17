@@ -32,6 +32,7 @@ h1 {
   font-size: 3.32rem;
   line-height: 1;
   font-weight: 600;
+  letter-spacing: 0.2rem;
 }
 
 h2 {
@@ -86,6 +87,7 @@ input::placeholder {
 
 .container-diferenciais,
 .container-blog {
+  max-width: 106rem;
   border-radius: 5rem;
   box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
 }
@@ -356,23 +358,62 @@ nav ul {
 }
 
 .caixa-titulo-diferenciais {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.88rem;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   padding: 4.88rem;
+  padding-bottom: 12rem;
   background-image: linear-gradient(225deg, #196b9f, #1a82a7);
   color: white;
 }
 
+.caixa-diferenciais-h2 {
+  border-left: solid 0.5rem #ffb20f;
+  padding: 0.52rem 0 0.52rem 1.6rem;
+  flex: 1;
+}
+
+.diferenciais-p {
+  margin-top: 0.52rem;
+  flex: 1;
+  text-align: right;
+}
+
 .caixa-restante-diferenciais {
-  padding: 4.88rem;
+  display: flex;
+  flex-flow: column;
+  gap: 4.88rem;
+  padding: 4.88rem 3.12rem;
+}
+
+.bloco-itens-diferenciais {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  margin-top: -10rem;
 }
 
 .caixa-itens-diferenciais {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
   position: relative;
   border-radius: 2.5rem;
   background-color: white;
   box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
-  padding: 3.12rem 2.5rem;
+  padding: 7rem 2.5rem 3.12rem 2.5rem;
+}
+
+.caixa-item-diferenciais {
+  display: flex;
+  flex-flow: column;
+  gap: 1.02rem;
 }
 
 .caixa-imagem-diferenciais {
@@ -394,7 +435,7 @@ nav ul {
 }
 
 .diferenciais-empresas img {
-  height: 5rem;
+  height: 4rem;
   filter: grayscale(100%);
 }
 
@@ -406,11 +447,6 @@ nav ul {
 .logo-subsea,
 .logo-animale {
   opacity: 75%;
-}
-
-.caixa-diferenciais-h2 {
-  border-left: solid 0.5rem #ffb20f;
-  padding: 0.52rem 0 0.52rem 1.6rem;
 }
 
 .diferenciais-h3 {
@@ -428,6 +464,14 @@ nav ul {
   text-decoration: none;
 }
 
+.bloco-imagens-diferenciais {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 10rem;
+}
+
 /* Seção O que falam */
 
 .secao-oquefalam {
@@ -437,15 +481,38 @@ nav ul {
   background-size: cover;
 }
 
+.container-oquefalam {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
 .oquefalam-titulo {
+  display: flex;
+  gap: 3.12rem;
+  text-align: center;
+
   color: white;
 }
 
 .oquefalam-carrossel {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   position: relative;
+  align-self: stretch;
+  gap: 2rem;
+}
+
+.oquefalam-carrossel-imagens {
+  display: flex;
+  gap: 2rem;
+  align-self: stretch;
 }
 
 .oquefalam-carrossel-img {
+  flex: 1;
   background-color: #7489af;
   background-blend-mode: multiply;
   position: relative;
@@ -453,7 +520,7 @@ nav ul {
   background-position: 50%;
   background-size: cover;
   aspect-ratio: 16/9;
-  width: 33%;
+
   border-radius: 2.5rem;
 }
 
@@ -528,9 +595,22 @@ nav ul {
   background-size: cover;
 }
 
+.container-namidia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .seta-namidia,
 .h2-namidia {
   display: inline-block;
+}
+
+.namidia-links,
+.teste-midia {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* Seção Blog */
