@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #303030;
+}
+.flex {
+  display: flex;
+
+  &.wrap {
+    flex-flow: row wrap;
+  }
+
+  &.col {
+    flex-flow: column;
+
+    &.wrap {
+      flex-flow: column wrap;
+    }
+  }
+}
+
+section {
+  padding: 6.1rem;
+  justify-content: center;
+}
+
+.carrossel {
+  max-width: 100rem;
+  position: relative;
+
+  & .container {
+    overflow: hidden;
+  }
+
+  & .imagens {
+    gap: 0.82rem;
+    width: max-content;
+
+    & .imagem {
+      width: min(
+        calc(calc(100rem - calc(2 * 0.82rem)) / 3),
+        calc(calc(100vw - calc(2 * 0.82rem)) / 3)
+      );
+      position: relative;
+      width: 32.78666rem;
+      /* O WIDTH DEFINIIU QUE CADA IMAGEM TENHA ESSE TAMANHO */
+      justify-content: center;
+      overflow: hidden;
+      /* O OVERFLOW HIDDEN CORTA O PEDACO DA IMAGEM Q PASSA DO CONTAINER */
+      border-radius: 1.5rem;
+      align-items: center;
+      aspect-ratio: 1/1;
+
+      &.emfoco::after {
+        background-color: transparent;
+        /* AQUI USANDO CRIEI UMA CLASSE NA SEGUNDA DIV
+        PARA PODER TIRAR A ESTILIZACAO DO AFTER ABAIXO */
+        backdrop-filter: none;
+        /* o backdrop aqui esta como none ja que abaixo na classe geral ele aplicou um blur pra todos os elementos porem nos queremos esse elemento do meio com foco*/
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.435);
+        width: 100%;
+        height: 100%;
+        /* AQUI É PARA APLICAR A TRANSPARENCIA SOBRE O ITEM */
+        backdrop-filter: blur(2px);
+      }
+
+      & img {
+        height: 100%;
+      }
+    }
+  }
+  & .botao {
+    position: absolute;
+    background-color: #303030;
+    color: white;
+    border-radius: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
+
+    &.esquerda {
+      transform: translate(-50%, -50%);
+    }
+
+    &.direita {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+}
