@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #303030;
+}
+
+section {
+  padding: 6.1rem;
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.925);
+  backdrop-filter: blur(2.5px);
+
+  & .container {
+    display: flex;
+    flex-flow: column;
+    gap: 2.5rem;
+    max-width: 49rem;
+    background-image: url(Captura\ de\ tela\ 2024-03-02\ 121920.png);
+    padding: 3.12rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.15);
+
+    & .titulo {
+      font-size: 2.76rem;
+      line-height: 1.3;
+      font-weight: 700;
+      text-align: center;
+
+      & .realce {
+        background-color: #ddd5d5;
+        border-radius: 2.5rem;
+        padding: 0 1.2rem;
+      }
+    }
+    & .texto {
+      display: flex;
+      flex-flow: column;
+      gap: 1.6rem;
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+
+      background-size: cover;
+      border-radius: 2.5rem;
+    }
+
+    & .botao {
+      align-self: center;
+      text-decoration: none;
+      color: inherit;
+      background-color: #ddd5d5;
+      border-radius: 2.5rem;
+      padding: 1rem 2rem;
+      font-weight: 700;
+      font-size: 2rem;
+      border: 2px solid black;
+      border-right-width: 4px;
+      border-bottom-width: 4px;
+      &:hover {
+        border: 3px solid rgb(9, 9, 9);
+        background-color: #787369;
+      }
+    }
+  }
+}

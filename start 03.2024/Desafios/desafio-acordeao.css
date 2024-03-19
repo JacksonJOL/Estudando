@@ -1,0 +1,79 @@
+/* Padrão */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #303030;
+}
+
+/* Acordeão */
+section {
+  padding: 6.1rem;
+}
+
+.acordeao {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+
+  & .item {
+    cursor: pointer;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.15);
+    border-radius: 3.5rem;
+
+    &.aberto {
+      & .conteudo {
+        display: flex;
+      }
+
+      & .cabecalho {
+        background-color: #754200;
+        color: white;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        &::after {
+          content: "\2BC5";
+        }
+      }
+    }
+
+    & .cabecalho,
+    & .conteudo {
+      padding: 2rem 3.12rem;
+    }
+
+    & .cabecalho {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 3.5rem;
+      font-weight: 700;
+      font-size: 1.92rem;
+
+      &::after {
+        content: "\2BC6";
+      }
+    }
+
+    & .conteudo {
+      display: none;
+      flex-flow: column;
+      gap: 1.28rem;
+      background-color: #fff0dd;
+      border-bottom-left-radius: 3.5rem;
+      border-bottom-right-radius: 3.5rem;
+    }
+  }
+}

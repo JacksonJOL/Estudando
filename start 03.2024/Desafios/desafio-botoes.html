@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Botões html</title>
+  </head>
+
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      .esquerdo,
+      .direito,
+      .one,
+      .two,
+      .three,
+      .four,
+      .five,
+      .tweny-five,
+      .reticencias {
+        margin-top: 10rem;
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(36, 216, 39);
+        border-radius: 50%;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        border: none;
+        font-weight: 700;
+      }
+
+      ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 5rem;
+      }
+
+      .one,
+      .two,
+      .four,
+      .reticencias,
+      .tweny-five {
+        background-color: white;
+        color: black;
+      }
+
+      .one:hover,
+      .two:hover,
+      .four:hover,
+      .reticencias:hover,
+      .tweny-five:hover {
+        background-color: rgb(36, 216, 39);
+        color: white;
+        cursor: pointer;
+        border: 0.1rem solid rgb(15, 16, 15);
+        box-shadow: 0.2rem 0 0.5rem 0 rgb(36, 216, 39);
+      }
+
+      .esquerdo:hover,
+      .three:hover,
+      .direito:hover {
+        background-color: white;
+        color: rgb(36, 216, 39);
+        cursor: pointer;
+        font-size: 3rem;
+        border: 0.1rem solid rgb(36, 216, 39);
+        box-shadow: 0.2rem 0 0.5rem 0 rgb(36, 216, 39);
+      }
+    </style>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>
+        <ul>
+          <button class="esquerdo">&#60;</button>
+          <li><button class="one">1</button></li>
+          <li><button class="two">2</button></li>
+          <li><button class="three">3</button></li>
+          <li><button class="four">4</button></li>
+          <li><button class="reticencias">...</button></li>
+          <li><button class="tweny-five">25</button></li>
+          <button class="direito">&#62;</button>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
