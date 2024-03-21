@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+  </head>
+
+  <!-- Grid: é uma propriedade do CSS que define todas as propriedades da grade explícita e implicitas em uma unica declaracao 
+    
+  a Grid vem por padrao como linha o elemento "grid-auto-flow" com o atributo "column" criara colunas automaticas, ex.se eu tenho uma area que cabem 4 elementos e eu tenho somente 2 colunas, se eu criar um novo elemento automaticamente o meu "grid-auto-flow: column" ira criar uma nova coluna para acomodar esse elemento, o mesmo caso ocorre quando eu tenho o "grid-auto-flow: row" porem ele ira criar uma nova linha para acomodar o elemento.
+  
+  diferente do flex a grid deixa cada elemento dentro da classe como um item em uma linha isso no modo auto... 
+  
+  se mudarmos p/ coluna a grid ira dividir o espaco entre os elementos deixando separados    
+
+  podemos definir o tamanho da caixa do grid com o Widith e o Height
+  
+  
+  EX: eu defino que meu width é de 100 e eu tenho 3 elementos ira ser dividido o espaço entre eles -->
+
+  <!-- grid-auto-rows   cria linhas automaticamente -->
+  <!-- grid-auto-columns   cria colunas automaticamente -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: Verdana, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      color: #303030;
+    }
+
+    .grid {
+      display: grid;
+      & div {
+        background-color: red;
+        width: 5rem;
+        height: 5rem;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+      }
+
+      & .div1 {
+        background-color: yellowgreen;
+      }
+      & .div2 {
+        margin: 0 5rem;
+        background-color: blue;
+      }
+      & .div3 {
+        background-color: crimson;
+        margin: 0 10rem;
+      }
+      & .div4 {
+        background-color: aqua;
+        margin: 0 15rem;
+      }
+      & .div5 {
+        background-color: fuchsia;
+        margin: 0 20rem;
+      }
+      & .div6 {
+        background-color: black;
+        color: white;
+      }
+    }
+  </style>
+  <body>
+    <header><nav></nav></header>
+
+    <main>
+      <section>
+        <div class="grid">
+          <div class="div1">1</div>
+          <div class="div2">2</div>
+          <div class="div3">3</div>
+          <div class="div4">4</div>
+          <div class="div5">5</div>
+          <div class="div6">6</div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
