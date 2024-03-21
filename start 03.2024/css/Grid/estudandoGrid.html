@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EstudandoGrid</title>
+  </head>
+
+  <!-- OBS: O CSS DEVE SER SEMPRE EM UM ARQUIVO EXTERNO AQUI É SO PARA FACILITAR O ESTUDO -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      color: #303030;
+      background-image: url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/t/n/tnc_83327143_Full.jpg?crop=183%2C0%2C3632%2C1907&wid=1200&hei=630&scl=3.026984126984127);
+      background-repeat: no-repeat;
+      backdrop-filter: blur(2.5rem);
+      background-size: cover;
+    }
+
+    nav {
+      font-size: 5rem;
+      background-image: linear-gradient(90deg, white, black);
+      text-shadow: 0 0.2rem 0.3rem black;
+      & h1 {
+        margin: 0 1rem;
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .plantas {
+      width: max-content;
+      height: max-content;
+      display: grid;
+      gap: 2rem;
+
+      grid-auto-flow: column;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 2.9rem;
+
+      & div {
+        width: 29rem;
+        height: 29rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: 0 0 0.5rem 0.3rem white;
+      }
+
+      & .sarracenia {
+        background-image: url(https://www.thegardener.co.za/wp-content/uploads/2022/01/Carnivorous-plants.jpg);
+        color: white;
+        font-weight: 700;
+      }
+      & .pinguicula {
+        background-image: url(https://m.media-amazon.com/images/I/71D9xpjOC5L._AC_UF894,1000_QL80_.jpg);
+      }
+      & .utricularia {
+        background-image: url(https://live-production.wcms.abc-cdn.net.au/527028d8732db5e82e1a429aa9717225?impolicy=wcms_crop_resize&cropH=1875&cropW=2816&xPos=0&yPos=112&width=862&height=575);
+      }
+      & .drosera {
+        background-image: url(https://plantly.io/wp-content/uploads/2023/12/AdobeStock_106967390.jpeg);
+      }
+      & .nepenthe {
+        background-image: url(https://img.atlasobscura.com/I_UtrVO0hbcqT9b_zkIwtmLtr0hC6u9TRYRbvTzWf48/rt:fit/w:1280/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy9lY2EyZGE4Zi03/MTk1LTRmMjktYmVl/Zi1hNDFhMzYwYmNm/ODBmN2ZlYTc0ZWZi/OTE5MDQ5ZWFfMi4g/VGhlIHRyb3BpY2Fs/IHBpdGNoZXIgcGxh/bnQgTmVwZW50aGVz/IGxvd2lpLmpwZw.jpg);
+      }
+      & .dioneia {
+        background-image: url(https://media.istockphoto.com/id/508792460/photo/venus-flytrap-with-trapped-fly.jpg?s=612x612&w=0&k=20&c=7N_A-OlCOgycxBNgzKTfa6yk4b5iHhJquXoeQ_xul20=);
+      }
+    }
+    h2 {
+      color: white;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      font-size: 5rem;
+      /* text-shadow: 0 0.2rem 0.3rem black; */
+
+      border-radius: 1rem;
+    }
+
+    .descricao {
+      width: 100rem;
+      /* height: 120rem; */
+      display: grid;
+      gap: 2rem;
+
+      grid-auto-flow: column;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 2.9rem;
+      margin-bottom: 2rem;
+
+      & div {
+        width: 29rem;
+        height: 50rem;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid black;
+        text-align: justify;
+        font-weight: 700;
+        border-radius: 0 0 1rem 1rem;
+        box-shadow: 0 0 0.5rem 0.3rem white;
+      }
+      /* display: flex;
+      margin: 0 1rem; */
+
+      /* display: grid; */
+      /* gap: 2rem;
+      width: 30rem;
+      height: 30rem;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      color: white;
+      border: 2px solid black; */
+      /* grid-template-columns: repeat(1, 6fr); */
+
+      & h3 {
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      & p {
+        margin: 1rem;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <h1>NatureGyn Plantas Exóticas</h1>
+      </nav>
+    </header>
+
+    <main>
+      <div><h2 class="h2">Plantas Carnivoras</h2></div>
+      <section>
+        <div class="plantas">
+          <div class="sarracenia"></div>
+          <div class="pinguicula"></div>
+          <div class="utricularia"></div>
+          <div class="drosera"></div>
+          <div class="nepenthe"></div>
+          <div class="dioneia"></div>
+          <!-- <br /> -->
+        </div>
+        <div class="descricao">
+          <div class="sarracenia">
+            <h3>Sarracenia</h3>
+            <p>
+              Sarracenia L. é um género botânico pertencente à família
+              Sarraceniaceae,[1] e do Reino Plantae As plantas deste Gênero, são
+              carnívoras e/ou insetívoras, pois na grande parte das vezes
+              alimentam-se de insetos. A mesma é natural da parte norte dos EUA
+              e Canadá.
+            </p>
+          </div>
+          <div class="pinguicula">
+            <h3>Pinguicula</h3>
+            <p>
+              Pinguicula L. é um género de plantas carnívoras que têm um sistema
+              de armadilhas parecidas com o das droseras, e 77 espécies.
+              Pertence à família Lentibulariaceae. Nativo da Europa, Ásia e
+              Américas.
+            </p>
+          </div>
+          <div class="utricularia">
+            <h3>utricularia</h3>
+            <p>
+              Utricularia L. (do latim utriculus= pequena garrafa) é um gênero
+              de plantas carnívoras da familia Lentibulariaceae. As espécies
+              desta familia são semi aquáticas ou aquáticas. Utricularia
+              desenvolveu um estranho sistema de armadilhas com válvulas
+              conseguindo pegar e digerir pequenos seres aquáticos.
+            </p>
+          </div>
+          <div class="brosera">
+            <h3>Drosera</h3>
+            <p>
+              Drosera L. (drósera) é um género botânico pertencente à família
+              Droseraceae. Esta família compreende uma extensa lista de plantas,
+              em sua maioria carnívoras. Caracterizam-se por apresentar folhas
+              dispostas em forma de roseta.[1] As Droseras possuem folhas
+              cobertas por pêlos que produzem uma substância pegajosa, a
+              mucilagem. Ao pousar na folha da planta, o animal fica colado a
+              essas gotas. Quanto mais ele se debate para escapar, mais grudado
+              ele fica. Depois da captura, a planta começa a produzir enzimas
+              digestivas que tratarão de digerir o inseto ou pequeno animal.
+            </p>
+          </div>
+          <div class="nepenthes">
+            <h3>Nepenthe</h3>
+            <p>
+              Nepenthaceae é uma família de plantas carnívoras angiospérmicas
+              (plantas com flor - divisão Magnoliophyta), pertencente à ordem
+              Caryophyllales. O grupo é monotípico e conta apenas com um género,
+              Nepenthes, que ocorre nos trópicos do Velho Mundo, nomeadamente no
+              sul da China, Indonésia e Filipinas, Malásia, Madagascar, Ilhas
+              Seychelles, Austrália, Nova Caledónia, Índia e Sri Lanka.[1]
+            </p>
+          </div>
+          <div class="dioneia">
+            <h3>Dioneia</h3>
+            <p>
+              A dioneia, também conhecida como apanha-moscas (Dionaea
+              muscipula), é uma planta carnívora que pega e digere a presa
+              animal (em geral insetos e aracnídeos). A estrutura de captura é
+              formada por dois lóbulos unidos pela base e presos na ponta de
+              cada uma das folhas.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
