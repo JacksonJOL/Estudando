@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+/* ****************************************** */
+
+/* main {
+  display: grid;
+
+  grid-template-areas:
+    " a a a "
+    " b ";
+} */
+
+h1 {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(1, 10rem);
+}
+/* 
+.secao1 {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: row;
+  grid-template-rows: ;
+  grid-template-columns: repeat(2, 30rem);
+
+  & h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  & h1::first-letter {
+    font-size: 6.4rem;
+  }
+  & .figure {
+    grid-column: 1 / 2;
+  }
+
+  & figure img {
+    width: 30rem;
+    grid-column: 1 / 2;
+  }
+
+  & figcaption {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  & .container-precocondicoes {
+    & a:link,
+    & a:visited {
+      display: inline-block;
+      color: #c44105;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-decoration: double;
+      text-decoration-line: underline;
+    }
+
+    & a:hover,
+    & a:active {
+      color: #0588c4;
+    }
+  }
+} */
+
+/* .secao2 {
+  display: grid;
+  justify-content: center;
+
+  &.container-listas {
+    display: grid;
+    gap: 3.9rem;
+    align-content: ;
+  }
+} */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamento na Grid</title>
+  </head>
+  <!-- OBS: O CSS DEVE SER SEMPRE EM UM ARQUIVO EXTERNO AQUI É SO PARA FACILITAR O ESTUDO -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      color: #303030;
+    }
+
+    /* o espacamentos da grid se da atraves do row-gap que e o espacamento entra as linhas, do column-gap que e o entre coulas, e o uso do gap que aplicara o espacamento para ambos */
+    .grid {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: underline black;
+
+      display: grid;
+      grid-auto-flow: column;
+
+      grid-template-rows: repeat(4, 15rem);
+
+      gap: 10rem; /* espacamento de 2 rem linha e coluna para todos os elementos */
+      row-gap: 3rem; /* espacamento de 2 rem linha  para todos os elementos */
+      column-gap: 4rem; /* espacamento de 2 rem coluna  para todos os elementos */
+
+      /* OBS: se eu especificar o espaco na linha ou coluna o meu gap e ja tiver um gap na estilizacao o gap nao ira ser preservado */
+
+      & .div1 {
+        background-color: aqua;
+      }
+
+      & .div2 {
+        background-color: rgb(136, 0, 255);
+      }
+
+      & .div3 {
+        background-color: yellow;
+      }
+
+      & .div4 {
+        background-color: rgb(234, 14, 14);
+      }
+
+      & .div5 {
+        background-color: rgb(15, 224, 67);
+      }
+
+      & .div6 {
+        background-color: rgb(13, 13, 13);
+        text-decoration: underline white;
+      }
+
+      & .div7 {
+        background-color: rgb(225, 101, 34);
+      }
+      & .div8 {
+        background-color: lime;
+      }
+      & .div9 {
+        background-color: blue;
+      }
+      & .div10 {
+        background-color: pink;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>
+        <div class="grid">
+          <div class="div1">1</div>
+          <div class="div2">2</div>
+          <div class="div3">3</div>
+          <div class="div4">4</div>
+          <div class="div5">5</div>
+          <div class="div6">6</div>
+          <div class="div7">7</div>
+          <div class="div8">8</div>
+          <div class="div9">9</div>
+          <div class="div10">10</div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

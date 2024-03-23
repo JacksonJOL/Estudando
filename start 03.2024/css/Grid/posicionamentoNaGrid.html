@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamento na Grid</title>
+  </head>
+  <!-- OBS: O CSS DEVE SER SEMPRE EM UM ARQUIVO EXTERNO AQUI É SO PARA FACILITAR O ESTUDO -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      color: #303030;
+    }
+
+    /* OBS PARA VER O A NUMERACAO DA GRID SO CLICAR NA GRID NA OPCOES DO DESENVOLVEDOR */
+    .grid {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: underline black;
+
+      display: grid;
+      grid-auto-flow: column; /*definido que sera a coluna criada automaticamente, ou seja se eu tenho 3 colunas e 3 linhas todas com elementos, se eu criar mais um elemento no html essa funcao ira criar automaticamente uma nova coluna para acoplar esse novo elemento a mesma ideia tambem e para a linha */
+
+      grid-template-rows: repeat(
+        4,
+        5rem
+      ); /* com o tamplate eu mesmo crio as linhas e passo qual e o tamanho q cada linha deve ter nesse caso criei 3 linhas com 5rem cada, a mesma ideia se aplica ao tamplate coluna */
+
+      & .div1 {
+        background-color: aqua;
+        grid-column: 2/3; /* aqui estou mudando o 1 para comecar na coluna 2 e terminar na 3, nota que quando ele vem pra essa posicao o espaco que era ocupado por ele passou a ser ocupado automaticamente pelo 2, o 2 pelo 3 ...*/
+      }
+
+      & .div2 {
+        background-color: rgb(136, 0, 255);
+      }
+
+      & .div3 {
+        background-color: yellow;
+      }
+
+      & .div4 {
+        background-color: rgb(234, 14, 14);
+        grid-row: 2/3;
+        grid-column: 3/6;
+        /* aqui eu mudo o 4 de posicao para linha do 2 ao 3 e para a coluna do 3 ao 4 todos os elementos sao ordenados novamente
+        OBS: exceto o elemento 1 que como eu determino sua posicao direto no elemento ele permanece no mesmo lugar e os demais elementos sem estiliacao de espaco sao reeordenados */
+      }
+
+      & .div5 {
+        background-color: rgb(15, 224, 67);
+      }
+
+      & .div6 {
+        background-color: rgb(13, 13, 13);
+        text-decoration: underline white;
+      }
+
+      & .div7 {
+        background-color: rgb(225, 101, 34);
+        grid-row: 4/5;
+        grid-column: 1 / span 8;
+        /* o span indica quanto espaco o elemento ira ocupar ou seja nesse caso eu defini q ele comeca na coluna 1 e ocupe 2 espacos ou seja ele ocupou o espaco da coluna 2 se eu aumentar o span ele vai ocupando o proximo espaco se esse espaco tiver disponivel e como minha coluna e gerada automaticamente quando ele ocupar o ultimo espaco e eu passar um span ainda maior ira gerar uma nova coluna ...*/
+      }
+      & .div8 {
+        background-color: lime;
+        grid-row: 1/4;
+        grid-column: 3/5;
+
+        /* aqui eu configuro o espaco q o 8 deve ocupar, porem o 4 ja esta ocupando parte desse espaco note que o elemento 8 ficou sobre o 4 porem aplicando a transparenria conseguimos ver o 4 na mesma posicao anterior*/
+      }
+      & .div9 {
+        background-color: blue;
+        grid-row: 3/4;
+        grid-column: 3/4;
+        /* aqui eu coloco o 9 sobre a posicao do 8 todos os elementos que teve seu posicionamento para o mesmo local sempre estarao la porem um vai sobrepondo ao outro */
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>
+        <div class="grid">
+          <div class="div1">1</div>
+          <div class="div2">2</div>
+          <div class="div3">3</div>
+          <div class="div4">4</div>
+          <div class="div5">5</div>
+          <div class="div6">6</div>
+          <div class="div7">7</div>
+          <div class="div8">8</div>
+          <div class="div9">9</div>
+          <div class="div10">10</div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

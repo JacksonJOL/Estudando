@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamento na Grid</title>
+  </head>
+  <!-- OBS: O CSS DEVE SER SEMPRE EM UM ARQUIVO EXTERNO AQUI É SO PARA FACILITAR O ESTUDO -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      color: #303030;
+    }
+
+    /* o grid-area é uma short para todos as propriedades de posicionamento como o grid-row,grid-column e span*/
+
+    .grid1 {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: underline black;
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-rows: repeat(4, 15rem);
+      grid-template-columns: repeat(3, 15rem);
+      gap: 1rem;
+      margin-top: 2rem;
+
+      grid-template-areas:
+        "a a a"
+        "b b c"
+        "d e e";
+      /* com o grid-template eu crio o layout da grid....  e passo a grid-area no elemento relacionando com o grid template nesse caso a b c d e  criado a grid e cada grid area ver no go live como ficou a disposicao para melhor entendimento */
+
+      /* com o grid-template-area eu crio o layout da grid */
+
+      & .diva {
+        background-color: lime;
+        grid-area: a;
+        border: 2rem solid black;
+      }
+      & .divb {
+        background-color: red;
+        grid-area: b;
+        border: 2rem solid black;
+      }
+      & .divc {
+        background-color: blue;
+        grid-area: c;
+        border: 2rem solid black;
+      }
+      & .divd {
+        background-color: yellow;
+        grid-area: d;
+        border: 2rem solid black;
+      }
+      & .dive {
+        background-color: green;
+        grid-area: e;
+        border: 2rem solid black;
+      }
+      & .divf {
+        background-color: rgba(246, 163, 8, 0.913);
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>
+        <div class="grid1">
+          <div class="diva">a</div>
+          <div class="divb">b</div>
+          <div class="divc">c</div>
+          <div class="divd">d</div>
+          <div class="dive">e</div>
+          <div class="divf">f</div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
