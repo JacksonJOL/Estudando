@@ -616,14 +616,16 @@ nav ul {
 /* Seção Blog */
 
 .container-blog {
-  display: flex;
-  flex-flow: row wrap;
+  /* display: flex; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  /* flex-flow: row wrap; */
   gap: 2.5rem;
-
   position: relative;
-
   background-color: #f9f9f9;
-  padding: 6rem;
+  padding: 4.88rem;
+  padding-top: 7.63rem;
 }
 
 .caixa-blog-h2 {
@@ -636,12 +638,12 @@ nav ul {
 .caixa-postblog {
   display: flex;
   flex-flow: column;
-  flex: 1 1 40%;
+  /* flex: 1 1 40%; */
   gap: 1.28rem;
   border-radius: 2.5rem;
   box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.15);
   padding: 2rem;
-  width: 49%;
+  width: 100%;
   background-color: #fff;
 }
 
